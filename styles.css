@@ -1,0 +1,171 @@
+/* ==========================================================================
+   COLOR THEME & FONTS
+   Theme: Copper (#B87333), Dark Gray (#2E2E2E), and Cream (#F5F5DC)
+   Style: Steampunk industrial aesthetic with clear, readable contrast.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* --- Global Base Styles --- */
+body { 
+    font-family: 'Righteous', cursive; 
+    background: #2E2E2E; 
+    color: #F5F5DC; 
+    margin: 0;
+}
+
+  /* NAVIGATION */
+
+nav { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;    
+    background: #2E2E2E; 
+    padding: 30px 0 10px 0; 
+    gap: 20px;              
+}
+
+nav ul { 
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0;
+    gap: 35px;
+}
+
+nav a { 
+    color: #B87333; 
+    text-decoration: none; 
+    font-size: 1.2rem;
+    padding: 5px 10px; 
+    transition: color 0.3s ease;
+}
+
+nav a:hover { 
+    color: #FFF; 
+}
+
+/* ---Logo --- */
+.logo {
+    width: 120px; 
+    height: auto;
+    display: block;
+}
+
+/* GENERAL COMPONENTS (Cards & Media)*/
+
+/* Main content wrapper cards */
+.card { 
+    background: #333; 
+    padding: 40px; 
+    border: 2px solid #B87333; 
+    margin: 20px auto 40px auto; 
+    max-width: 90%; 
+    width: 1100px;  
+    box-sizing: border-box; 
+    text-align: center; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Home page introductory paragraph */
+.description {
+    max-width: 750px;
+    margin: 20px auto;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* Centered fluid images */
+img { 
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 20px auto; 
+}
+
+/* DATA TABLES (Menu Page)*/
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 25px; 
+}
+
+table, th, td { 
+    border: 1px solid #B87333; 
+    padding: 12px; 
+}
+
+th {
+    background-color: #2E2E2E;
+    color: #B87333;
+}
+
+tbody tr:nth-child(even) { 
+    background: #444; 
+}
+
+caption {
+    font-size: 1.5rem;
+    color: #B87333; 
+    padding-bottom: 12px;
+    font-weight: bold;
+}
+
+/*FORMS (Reservations Page) */
+
+form { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+    text-align: left; 
+    max-width: 450px; 
+    margin: 30px auto 0 auto; 
+}
+
+fieldset {
+    border: 1px solid #B87333;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+legend {
+    color: #B87333;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+/* Standardized input elements for a cohesive, clean look */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 8px;
+    background: #2E2E2E;
+    border: 1px solid #B87333;
+    color: #F5F5DC;
+    font-family: inherit;
+}
+
+/* Action buttons styling and placement */
+button {
+    padding: 10px;
+    background: #B87333;
+    color: #2E2E2E;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+button:hover {
+    background: #FFF;
+    color: #2E2E2E;
+}
+
+/* Note: The Font Awesome icon (fa-gears) is integrated directly into the 
+   index.html file, positioned immediately before the main h1 restaurant name. */

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservations - The Rusty Piston</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+        </ul>
+    </nav>
+    <main class="card">
+        <h2>Reservations</h2>
+        <img src="images/img2.jpg" alt="Cozy booths waiting for you.">
+        <p>Reservations are request only.</p>
+        
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" maxlength="20" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="party">Party Size:</label>
+            <select id="party" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+            
+            <label for="time">Time:</label>
+            <input type="time" id="time" required>
+            
+            <fieldset>
+                <legend>Seating preference</legend>
+                <input type="radio" id="in" name="seat" value="Indoor" checked>
+                <label for="in">Indoor</label>
+                
+                <input type="radio" id="out" name="seat" value="Outdoor">
+                <label for="out">Outdoor</label>
+                
+                <input type="radio" id="bar" name="seat" value="Bar">
+                <label for="bar">Bar</label>
+            </fieldset>
+            
+            <label for="notes">Dietary notes (30 chars max):</label>
+            <textarea id="notes" maxlength="30"></textarea>
+            
+            <input type="checkbox" id="newsletter">
+            <label for="newsletter">Subscribe to our newsletter</label>
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+</body>
+</html>
